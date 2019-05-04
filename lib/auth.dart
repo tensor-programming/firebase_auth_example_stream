@@ -67,7 +67,7 @@ class Auth implements BaseAuth {
 
   @override
   Future<void> signOut() {
-    return FirebaseAuth.instance.signOut();
+    return _firebaseAuth.signOut();
   }
 
   @override

@@ -29,7 +29,11 @@ class MyHomePage extends StatelessWidget {
       builder: (context, AsyncSnapshot<String> snapshot) {
         if (snapshot.connectionState == ConnectionState.active) {
           final bool loggedIn = snapshot.hasData;
-          return loggedIn ? HomePage() : LoginPage();
+          if (loggedIn == true) {
+            return HomePage();
+          } else {
+            return LoginPage();
+          }
         }
         return CircularProgressIndicator();
       },
@@ -133,10 +137,14 @@ class _LoginPageState extends State<LoginPage> {
       appBar: AppBar(
         title: Text('Form Page'),
       ),
+      resizeToAvoidBottomPadding: false,
       body: Center(
         child: Form(
           key: formKey,
           child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: buildInputs() + buildButtons(),
           ),
         ),
@@ -165,16 +173,22 @@ class _LoginPageState extends State<LoginPage> {
       return [
         RaisedButton(
           child: Text('Login'),
+          color: Colors.blueAccent,
           onPressed: submit,
         ),
         FlatButton(
           child: Text('Register Account'),
+          color: Colors.teal,
           onPressed: () {
             switchFormState('register');
           },
         ),
+        Divider(
+          height: 50.0,
+        ),
         FlatButton(
           child: Text("Sign in with Google"),
+          color: Colors.lightGreen,
           onPressed: () async {
             try {
               final _auth = Provider.of(context).auth;
@@ -187,6 +201,7 @@ class _LoginPageState extends State<LoginPage> {
         ),
         FlatButton(
           child: Text('Sign in with Facebook'),
+          color: Colors.lightBlue,
           onPressed: () async {
             try {
               final _auth = Provider.of(context).auth;
@@ -202,10 +217,12 @@ class _LoginPageState extends State<LoginPage> {
       return [
         RaisedButton(
           child: Text('Create Account'),
+          color: Colors.blueAccent,
           onPressed: submit,
         ),
         FlatButton(
           child: Text('Go to Login'),
+          color: Colors.teal,
           onPressed: () {
             switchFormState('login');
           },
