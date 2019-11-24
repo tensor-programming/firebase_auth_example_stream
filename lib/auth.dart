@@ -36,6 +36,7 @@ class Auth implements BaseAuth {
       email: email,
       password: password,
     ))
+        .user
         .uid;
   }
 
@@ -51,6 +52,7 @@ class Auth implements BaseAuth {
       email: email,
       password: password,
     ))
+        .user
         .uid;
   }
 
@@ -62,7 +64,7 @@ class Auth implements BaseAuth {
       accessToken: _auth.accessToken,
       idToken: _auth.idToken,
     );
-    return (await _firebaseAuth.signInWithCredential(credential)).uid;
+    return (await _firebaseAuth.signInWithCredential(credential)).user.uid;
   }
 
   @override
@@ -77,6 +79,6 @@ class Auth implements BaseAuth {
     final AuthCredential credential = FacebookAuthProvider.getCredential(
       accessToken: result.accessToken.token,
     );
-    return (await _firebaseAuth.signInWithCredential(credential)).uid;
+    return (await _firebaseAuth.signInWithCredential(credential)).user.uid;
   }
 }

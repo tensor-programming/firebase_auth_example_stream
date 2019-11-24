@@ -145,7 +145,10 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: buildInputs() + buildButtons(),
+            children: [
+              ...buildInputs(),
+              ...buildButtons(),
+            ],
           ),
         ),
       ),
