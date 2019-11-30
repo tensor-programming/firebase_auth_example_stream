@@ -1,0 +1,695 @@
+C:\Projects\dart\firebase_auth_example_stream\build\app\outputs\apk\app.apk AndroidManifest.xml
+[   +1 ms] N: android=http://schemas.android.com/apk/res/android
+             E: manifest (line=2)
+               A: android:versionCode(0x0101021b)=(type 0x10)0x1
+               A: android:versionName(0x0101021c)="1.0.0" (Raw: "1.0.0")
+               A: android:compileSdkVersion(0x01010572)=(type 0x10)0x1c
+               A: android:compileSdkVersionCodename(0x01010573)="9" (Raw: "9")
+               A: package="com.example.fb_auth_example" (Raw: "com.example.fb_auth_example")
+               A: platformBuildVersionCode=(type 0x10)0x1
+               A: platformBuildVersionName="1.0.0" (Raw: "1.0.0")
+               E: uses-sdk (line=7)
+                 A: android:minSdkVersion(0x0101020c)=(type 0x10)0x10
+                 A: android:targetSdkVersion(0x01010270)=(type 0x10)0x1c
+               E: uses-permission (line=14)
+                 A: android:name(0x01010003)="android.permission.INTERNET" (Raw: "android.permission.INTERNET")
+               E: application (line=22)
+                 A: android:label(0x01010001)="fb_auth_example" (Raw: "fb_auth_example")
+                 A: android:icon(0x01010002)=@0x7f080000
+                 A: android:name(0x01010003)="io.flutter.app.FlutterApplication" (Raw: "io.flutter.app.FlutterApplication")
+                 A: android:debuggable(0x0101000f)=(type 0x12)0xffffffff
+                 A: android:appComponentFactory(0x0101057a)="androidx.core.app.CoreComponentFactory" (Raw: "androidx.core.app.CoreComponentFactory")
+                 E: activity (line=28)
+                   A: android:theme(0x01010000)=@0x7f0a0000
+                   A: android:name(0x01010003)="com.example.fb_auth_example.MainActivity" (Raw: "com.example.fb_auth_example.MainActivity")
+                   A: android:launchMode(0x0101001d)=(type 0x10)0x1
+                   A: android:configChanges(0x0101001f)=(type 0x11)0x400037b4
+                   A: android:windowSoftInputMode(0x0101022b)=(type 0x11)0x10
+                   A: android:hardwareAccelerated(0x010102d3)=(type 0x12)0xffffffff
+                   E: meta-data (line=42)
+                     A: android:name(0x01010003)="io.flutter.app.android.SplashScreenUntilFirstFrame" (Raw: "io.flutter.app.android.SplashScreenUntilFirstFrame")
+                     A: android:value(0x01010024)=(type 0x12)0xffffffff
+                   E: intent-filter (line=46)
+                     E: action (line=47)
+                       A: android:name(0x01010003)="android.intent.action.MAIN" (Raw: "android.intent.action.MAIN")
+                     E: category (line=49)
+                       A: android:name(0x01010003)="android.intent.category.LAUNCHER" (Raw: "android.intent.category.LAUNCHER")
+                 E: service (line=53)
+                   A: android:name(0x01010003)="com.google.firebase.components.ComponentDiscoveryService" (Raw: "com.google.firebase.components.ComponentDiscoveryService")
+                   A: android:exported(0x01010010)=(type 0x12)0x0
+                   E: meta-data (line=56)
+                     A: android:name(0x01010003)="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar" (Raw:
+                     "com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar")
+                     A: android:value(0x01010024)="com.google.firebase.components.ComponentRegistrar" (Raw: "com.google.firebase.components.ComponentRegistrar")
+                   E: meta-data (line=59)
+                     A: android:name(0x01010003)="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar" (Raw:
+                     "com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar")
+                     A: android:value(0x01010024)="com.google.firebase.components.ComponentRegistrar" (Raw: "com.google.firebase.components.ComponentRegistrar")
+                   E: meta-data (line=62)
+                     A: android:name(0x01010003)="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" (Raw: "com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar")
+                     A: android:value(0x01010024)="com.google.firebase.components.ComponentRegistrar" (Raw: "com.google.firebase.components.ComponentRegistrar")
+                 E: activity (line=67)
+                   A: android:theme(0x01010000)=@0x01030010
+                   A: android:name(0x01010003)="com.google.firebase.auth.internal.FederatedSignInActivity" (Raw: "com.google.firebase.auth.internal.FederatedSignInActivity")
+                   A: android:permission(0x01010006)="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN" (Raw: "com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN")
+                   A: android:exported(0x01010010)=(type 0x12)0xffffffff
+                   A: android:excludeFromRecents(0x01010017)=(type 0x12)0xffffffff
+                   A: android:launchMode(0x0101001d)=(type 0x10)0x2
+                 E: activity (line=74)
+                   A: android:theme(0x01010000)=@0x01030010
+                   A: android:name(0x01010003)="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" (Raw: "com.google.android.gms.auth.api.signin.internal.SignInHubActivity")
+                   A: android:exported(0x01010010)=(type 0x12)0x0
+                   A: android:excludeFromRecents(0x01010017)=(type 0x12)0xffffffff
+                 E: service (line=83)
+                   A: android:name(0x01010003)="com.google.android.gms.auth.api.signin.RevocationBoundService" (Raw: "com.google.android.gms.auth.api.signin.RevocationBoundService")
+                   A: android:permission(0x01010006)="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" (Raw: "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION")
+                   A: android:exported(0x01010010)=(type 0x12)0xffffffff
+                 E: provider (line=88)
+                   A: android:name(0x01010003)="com.google.firebase.provider.FirebaseInitProvider" (Raw: "com.google.firebase.provider.FirebaseInitProvider")
+                   A: android:exported(0x01010010)=(type 0x12)0x0
+                   A: android:authorities(0x01010018)="com.example.fb_auth_example.firebaseinitprovider" (Raw: "com.example.fb_auth_example.firebaseinitprovider")
+                   A: android:initOrder(0x0101001a)=(type 0x10)0x64
+                 E: activity (line=94)
+                   A: android:theme(0x01010000)=@0x01030010
+                   A: android:name(0x01010003)="com.google.android.gms.common.api.GoogleApiActivity" (Raw: "com.google.android.gms.common.api.GoogleApiActivity")
+                   A: android:exported(0x01010010)=(type 0x12)0x0
+                 E: meta-data (line=99)
+                   A: android:name(0x01010003)="com.google.android.gms.version" (Raw: "com.google.android.gms.version")
+                   A: android:value(0x01010024)=@0x7f060001
+[  +12 ms] Stopping app 'app.apk' on Android SDK built for x86.
+[   +1 ms] executing: C:\Users\<User>\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell am force-stop com.example.fb_auth_example
+[ +799 ms] executing: C:\Users\<User>\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell pm list packages com.example.fb_auth_example
+[ +593 ms] package:com.example.fb_auth_example
+[   +5 ms] executing: C:\Users\<User>\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell cat /data/local/tmp/sky.com.example.fb_auth_example.sha1
+[ +183 ms] 809a4eec3e69556aa1c1f23829f161067155f39d
+[   +1 ms] Installing APK.
+[   +2 ms] executing: C:\Users\<User>\AppData\Local\Android\Sdk\platform-tools\adb.exe version
+[ +135 ms] Android Debug Bridge version 1.0.41
+                    Version 29.0.5-5949299
+                    Installed as C:\Users\<User>\AppData\Local\Android\Sdk\platform-tools\adb.exe
+[   +1 ms] executing: C:\Users\<User>\AppData\Local\Android\Sdk\platform-tools\adb.exe start-server
+[ +739 ms] Installing build\app\outputs\apk\app.apk...
+[   +1 ms] executing: C:\Users\<User>\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 install -t -r C:\Projects\dart\firebase_auth_example_stream\build\app\outputs\apk\app.apk
+[+3643 ms] Performing Streamed Install
+                    Success
+[   +1 ms] Installing build\app\outputs\apk\app.apk... (completed in 3.6s)
+[   +3 ms] executing: C:\Users\<User>\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell echo -n c34deee22a701af604de0af101ad76a8c2e1e43b > /data/local/tmp/sky.com.example.fb_auth_example.sha1
+[ +273 ms] Android SDK built for x86 startApp
+[   +4 ms] executing: C:\Users\<User>\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell am start -a android.intent.action.RUN -f 0x20000000 --ez enable-background-compilation true --ez enable-dart-profiling true --ez enable-checked-mode true --ez verify-entry-points true com.example.fb_auth_example/com.example.fb_auth_example.MainActivity
+[ +329 ms] Starting: Intent { act=android.intent.action.RUN flg=0x20000000 cmp=com.example.fb_auth_example/.MainActivity (has extras) }
+[   +1 ms] Waiting for observatory port to be available...
+[+1460 ms] Observatory URL on device: http://127.0.0.1:42708/CpXjyTrj4fs=/
+[   +3 ms] executing: C:\Users\<User>\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 forward tcp:0 tcp:42708
+[ +563 ms] 57939
+[   +1 ms] Forwarded host port 57939 to device port 42708 for Observatory
+[  +11 ms] Connecting to service protocol: http://127.0.0.1:57939/CpXjyTrj4fs=/
+[ +578 ms] Successfully connected to service protocol: http://127.0.0.1:57939/CpXjyTrj4fs=/
+[   +3 ms] Sending to VM service: getVM({})
+[   +7 ms] Result: {type: VM, name: vm, architectureBits: 32, hostCPU: AMD FX(tm)-8350 Eight-Core Processor, operatingSystem: android, targetCPU: ia32, version: 2.5.0 (Fri Sep 6 20:10:36 2019 +0200) on "android_ia32", _profilerMode: VM,
+_nativeZoneMemoryUsage: 0, pi...
+[   +5 ms] Sending to VM service: getIsolate({isolateId: isolates/593068628841227})
+[   +3 ms] Sending to VM service: _flutter.listViews({})
+[  +27 ms] Result: {type: FlutterViewList, views: [{type: FlutterView, id: _flutterView/0xea527890, isolate: {type: @Isolate, fixedId: true, id: isolates/593068628841227, name: main.dart$main-593068628841227, number: 593068628841227}}]}
+[   +5 ms] DevFS: Creating new filesystem on the device (null)
+[   +1 ms] Sending to VM service: _createDevFS({fsName: firebase_auth_example_stream})
+[  +86 ms] Result: {type: FileSystem, name: firebase_auth_example_stream, uri: file:///data/user/0/com.example.fb_auth_example/code_cache/firebase_auth_example_streamQTUXTO/firebase_auth_example_stream/}
+[        ] DevFS: Created new filesystem on the device (file:///data/user/0/com.example.fb_auth_example/code_cache/firebase_auth_example_streamQTUXTO/firebase_auth_example_stream/)
+[   +1 ms] Updating assets
+[ +118 ms] Result: {type: Isolate, id: isolates/593068628841227, name: main, number: 593068628841227, _originNumber: 593068628841227, startTime: 1575092835269, _heaps: {new: {type: HeapSpace, name: new, vmName: Scavenger, collections: 2, avgCollectionPeriodMillis: 5...
+[  +42 ms] Scanned through 0 files in 0ms
+[   +2 ms] Syncing files to device Android SDK built for x86...
+[   +2 ms] Scanning asset files
+[   +3 ms] <- reset
+[        ] Compiling dart to kernel with 0 updated files
+[   +9 ms] c:\flutter\bin\cache\dart-sdk\bin\dart c:\flutter\bin\cache\artifacts\engine\windows-x64\frontend_server.dart.snapshot --sdk-root c:\flutter\bin\cache\artifacts\engine\common\flutter_patched_sdk/ --incremental --strong
+--target=flutter --output-dill build\app.dill --packages C:\Projects\dart\firebase_auth_example_stream\.packages --filesystem-scheme org-dartlang-root
+[  +46 ms] <- compile package:fb_auth_example/main.dart
+[ +239 ms] -> result ff0a91d0-3a98-408a-9f1d-672b9aa9e74e
+[ +190 ms] I/flutter ( 8147): false
+[ +491 ms] I/Choreographer( 8147): Skipped 114 frames!  The application may be doing too much work on its main thread.
+[  +11 ms] D/EGL_emulation( 8147): eglMakeCurrent: 0xe6d7c4a0: ver 3 0 (tinfo 0xd32aefd0)
+[  +82 ms] I/OpenGLRenderer( 8147): Davey! duration=2003ms; Flags=1, IntendedVsync=629541064579, Vsync=631441064503, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=631444918900, AnimationStart=631445036100,
+PerformTraversalsStart=631445088500, DrawStart=631460776900, SyncQueued=631463098700, SyncStart=631470192600, IssueDrawCommandsStart=631471362300, SwapBuffers=631524981800, FrameCompleted=631552024400, DequeueBufferDuration=15201000,
+QueueBufferDuration=447000,
+[ +668 ms] D/EGL_emulation( 8147): eglMakeCurrent: 0xe8785720: ver 3 0 (tinfo 0xe87838b0)
+[  +45 ms] D/skia    ( 8147): Shader compilation error
+[   +1 ms] D/skia    ( 8147): ------------------------
+[   +1 ms] D/skia    ( 8147): Errors:
+[   +1 ms] D/skia    ( 8147):
+[   +1 ms] I/flutter ( 8147): true
+[  +15 ms] D/skia    ( 8147): Shader compilation error
+[   +1 ms] D/skia    ( 8147): ------------------------
+[   +1 ms] D/skia    ( 8147): Errors:
+[        ] D/skia    ( 8147):
+[   +8 ms] D/skia    ( 8147): Shader compilation error
+[   +2 ms] D/skia    ( 8147): ------------------------
+[   +4 ms] D/skia    ( 8147): Errors:
+[   +1 ms] D/skia    ( 8147):
+[   +9 ms] D/skia    ( 8147): Shader compilation error
+[   +1 ms] D/skia    ( 8147): ------------------------
+[        ] D/skia    ( 8147): Errors:
+[   +1 ms] D/skia    ( 8147):
+[+1055 ms] -> ff0a91d0-3a98-408a-9f1d-672b9aa9e74e
+[   +1 ms] -> +file:///C:/Projects/dart/firebase_auth_example_stream/lib/auth.dart
+[        ] -> +file:///C:/Projects/dart/firebase_auth_example_stream/lib/main.dart
+[        ] -> +file:///C:/Projects/dart/firebase_auth_example_stream/lib/provider.dart
+[        ] -> +file:///C:/Projects/dart/firebase_auth_example_stream/lib/validators.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/collection.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/algorithms.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/canonicalized_map.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/combined_wrappers/combined_iterable.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/combined_wrappers/combined_list.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/combined_wrappers/combined_map.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/comparators.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/empty_unmodifiable_set.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/wrappers.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/equality.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/equality_map.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/equality_set.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/functions.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/iterable_zip.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/priority_queue.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/queue_list.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/union_set.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/unmodifiable_wrappers.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/union_set_controller.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/utils.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1/lib/firebase_auth.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1/lib/src/firebase_auth.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1/lib/src/auth_provider/email_auth_provider.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1/lib/src/auth_provider/facebook_auth_provider.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1/lib/src/auth_provider/github_auth_provider.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1/lib/src/auth_provider/google_auth_provider.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1/lib/src/auth_provider/phone_auth_provider.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1/lib/src/auth_provider/twitter_auth_provider.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1/lib/src/additional_user_info.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1/lib/src/auth_credential.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1/lib/src/auth_exception.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1/lib/src/auth_result.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1/lib/src/firebase_user.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1/lib/src/id_token_result.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1/lib/src/user_info.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1/lib/src/user_metadata.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.0+1/lib/src/user_update_info.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.4.2/lib/firebase_core.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.4.2/lib/src/firebase_app.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-1.0.0/lib/firebase_core_platform_interface.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-1.0.0/lib/src/firebase_options.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-1.0.0/lib/src/method_channel_firebase_core.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-1.0.0/lib/src/platform_firebase_app.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in-4.0.14/lib/google_sign_in.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in-4.0.14/lib/src/common.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in-4.0.14/lib/src/fife.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in-4.0.14/lib/widgets.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_platform_interface-1.0.0/lib/google_sign_in_platform_interface.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_platform_interface-1.0.0/lib/src/method_channel_google_sign_in.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_platform_interface-1.0.0/lib/src/types.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_platform_interface-1.0.0/lib/src/utils.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.1.7/lib/meta.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/quiver_hashcode-2.0.0/lib/hashcode.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.1.6/lib/typed_buffers.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/hash.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/vector_math_64.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/aabb2.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/aabb3.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/colors.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/frustum.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/intersection_result.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/matrix2.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/matrix3.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/matrix4.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/obb3.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/plane.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/quad.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/quaternion.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/ray.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/sphere.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/third_party/noise.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/triangle.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/vector.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/vector2.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/vector3.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/vector4.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/constants.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/error_helpers.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/opengl.dart
+[        ] -> +file:///c:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib/src/vector_math_64/utilities.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/animation.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/cupertino.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/foundation.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/gestures.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/material.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/painting.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/physics.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/rendering.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/scheduler.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/semantics.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/services.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/animation/animation.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/animation/animation_controller.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/animation/listener_helpers.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/animation/animations.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/animation/curves.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/animation/tween.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/animation/tween_sequence.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/action_sheet.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/object.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/box.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/activity_indicator.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/ticker_provider.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/app.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/bottom_tab_bar.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/button.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/colors.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/constants.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/date_picker.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/dialog.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/icons.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/localizations.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/nav_bar.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/diagnostics.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/page_scaffold.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/picker.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/refresh.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/route.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/scrollbar.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/segmented_control.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/slider.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/switch.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/tab_scaffold.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/tab_view.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/text_field.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/automatic_keep_alive.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/text_selection.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/text_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/cupertino/thumb_painter.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/_bitfield_io.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/_isolates_io.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/_platform_io.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/annotations.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/assertions.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/basic_types.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/binding.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/bitfield.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/change_notifier.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/collections.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/consolidate_response.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/constants.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/debug.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/isolates.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/key.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/licenses.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/node.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/observer_list.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/platform.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/print.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/profile.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/serialization.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/synchronous_future.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/foundation/unicode.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/arena.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/binding.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/constants.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/converter.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/debug.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/drag.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/drag_details.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/eager.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/events.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/force_press.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/hit_test.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/long_press.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/lsq_solver.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/monodrag.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/mouse_tracking.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/multidrag.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/multitap.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/pointer_router.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/pointer_signal_resolver.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/recognizer.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/scale.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/tap.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/team.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/gestures/velocity_tracker.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/about.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/animated_icons.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/animated_icons/animated_icons.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/animated_icons/animated_icons_data.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/animated_icons/data/add_event.g.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/animated_icons/data/arrow_menu.g.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/animated_icons/data/close_menu.g.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/animated_icons/data/ellipsis_search.g.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/animated_icons/data/event_add.g.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/animated_icons/data/home_menu.g.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/animated_icons/data/list_view.g.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/animated_icons/data/menu_arrow.g.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/animated_icons/data/menu_close.g.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/animated_icons/data/menu_home.g.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/animated_icons/data/pause_play.g.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/animated_icons/data/play_pause.g.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/animated_icons/data/search_ellipsis.g.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/animated_icons/data/view_list.g.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/app.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/app_bar.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/app_bar_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/arc.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/back_button.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/banner.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/banner_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/bottom_app_bar.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/bottom_app_bar_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/bottom_navigation_bar.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/bottom_sheet.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/bottom_sheet_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/button.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/button_bar.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/button_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/card.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/card_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/checkbox.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/checkbox_list_tile.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/chip.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/chip_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/circle_avatar.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/color_scheme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/colors.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/constants.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/data_table.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/data_table_source.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/date_picker.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/debug.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/dialog.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/dialog_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/divider.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/divider_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/drawer.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/drawer_header.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/dropdown.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/binding.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/expand_icon.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/expansion_panel.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/expansion_tile.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/feedback.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/flat_button.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/flexible_space_bar.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/floating_action_button.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/floating_action_button_location.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/floating_action_button_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/flutter_logo.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/grid_tile.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/grid_tile_bar.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/icon_button.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/icons.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/ink_decoration.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/ink_highlight.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/ink_ripple.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/ink_splash.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/ink_well.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/input_border.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/input_decorator.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/list_tile.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/material.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/material_button.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/material_localizations.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/material_state.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/mergeable_material.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/outline_button.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/page.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/page_transitions_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/paginated_data_table.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/popup_menu.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/popup_menu_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/progress_indicator.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/radio.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/radio_list_tile.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/raised_button.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/range_slider.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/refresh_indicator.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/reorderable_list.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/scaffold.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/scrollbar.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/search.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/selectable_text.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/shadows.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/slider.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/slider_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/snack_bar.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/snack_bar_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/stepper.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/switch.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/switch_list_tile.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/tab_bar_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/tab_controller.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/tab_indicator.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/tabs.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/text_field.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/text_form_field.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/text_selection.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/text_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/theme_data.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/time.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/time_picker.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/toggle_buttons.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/toggle_buttons_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/toggleable.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/tooltip.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/tooltip_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/typography.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/material/user_accounts_drawer_header.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/_network_image_io.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/alignment.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/basic_types.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/beveled_rectangle_border.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/binding.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/border_radius.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/borders.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/box_border.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/box_decoration.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/box_fit.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/box_shadow.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/circle_border.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/clip.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/colors.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/continuous_rectangle_border.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/debug.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/decoration.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/decoration_image.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/edge_insets.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/flutter_logo.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/fractional_offset.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/geometry.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/gradient.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/image_cache.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/image_decoder.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/image_provider.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/image_resolution.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/image_stream.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/inline_span.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/matrix_utils.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/notched_shapes.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/paint_utilities.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/placeholder_span.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/rounded_rectangle_border.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/shader_warm_up.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/shape_decoration.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/stadium_border.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/strut_style.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/text_painter.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/text_span.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/painting/text_style.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/physics/clamped_simulation.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/physics/friction_simulation.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/physics/gravity_simulation.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/physics/simulation.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/physics/spring_simulation.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/physics/tolerance.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/physics/utils.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/animated_size.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/binding.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/binding.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/scheduler/binding.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/semantics/binding.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/custom_layout.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/custom_paint.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/debug.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/debug_overflow_indicator.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/editable.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/error.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/flex.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/flow.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/image.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/layer.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/list_body.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/list_wheel_viewport.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/paragraph.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/performance_overlay.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/platform_view.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/proxy_box.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/rotated_box.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/shifted_box.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/sliver.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/sliver_fill.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/sliver_fixed_extent_list.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/sliver_grid.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/sliver_list.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/sliver_multi_box_adaptor.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/sliver_padding.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/sliver_persistent_header.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/stack.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/table.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/table_border.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/texture.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/tweens.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/view.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/viewport.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/viewport_offset.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/rendering/wrap.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/scheduler/debug.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/scheduler/priority.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/scheduler/ticker.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/semantics/debug.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/semantics/semantics.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/semantics/semantics_event.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/semantics/semantics_service.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/asset_bundle.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/binary_messenger.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/clipboard.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/font_loader.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/haptic_feedback.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/keyboard_key.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/keyboard_maps.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/message_codec.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/message_codecs.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/platform_channel.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/platform_messages.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/platform_views.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/raw_keyboard.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/raw_keyboard_android.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/raw_keyboard_fuchsia.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/raw_keyboard_linux.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/raw_keyboard_macos.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/system_channels.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/system_chrome.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/system_navigator.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/system_sound.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/text_editing.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/text_formatter.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/services/text_input.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/actions.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/animated_cross_fade.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/animated_list.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/animated_size.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/animated_switcher.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/annotated_region.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/app.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/async.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/banner.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/basic.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/bottom_navigation_bar_item.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/color_filter.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/constants.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/container.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/debug.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/dismissible.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/drag_target.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/draggable_scrollable_sheet.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/scroll_notification.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/editable_text.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/fade_in_image.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/focus_manager.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/focus_scope.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/focus_traversal.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/form.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/framework.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/gesture_detector.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/grid_paper.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/heroes.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/icon.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/icon_data.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/icon_theme.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/icon_theme_data.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/image.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/image_icon.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/implicit_animations.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/inherited_model.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/inherited_notifier.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/layout_builder.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/list_wheel_scroll_view.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/localizations.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/media_query.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/modal_barrier.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/navigation_toolbar.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/navigator.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/nested_scroll_view.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/notification_listener.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/orientation_builder.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/overlay.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/overscroll_indicator.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/page_storage.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/page_view.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/pages.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/performance_overlay.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/placeholder.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/platform_view.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/preferred_size.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/primary_scroll_controller.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/raw_keyboard_listener.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/route_notification_messages.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/routes.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/safe_area.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/scroll_activity.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/scroll_configuration.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/scroll_context.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/scroll_controller.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/scroll_metrics.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/scroll_physics.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/scroll_position.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/scroll_position_with_single_context.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/scroll_simulation.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/scroll_view.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/scrollable.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/scrollbar.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/semantics_debugger.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/shortcuts.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/single_child_scroll_view.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/size_changed_layout_notifier.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/sliver.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/sliver_layout_builder.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/sliver_persistent_header.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/sliver_prototype_extent_list.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/spacer.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/status_transitions.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/table.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/text.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/text_selection.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/texture.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/title.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/transitions.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/unique_widget.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/value_listenable_builder.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/viewport.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/visibility.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/widget_inspector.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/widget_span.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/src/widgets/will_pop_scope.dart
+[        ] -> +file:///c:/flutter/packages/flutter/lib/widgets.dart
+[        ] -> ff0a91d0-3a98-408a-9f1d-672b9aa9e74e build\app.dill 0
+[        ] Updating files
+[ +148 ms] DevFS: Sync finished
+[   +2 ms] Syncing files to device Android SDK built for x86... (completed in 3,302ms, longer than expected)
+[        ] Synced 0.9MB.
+[   +1 ms] Sending to VM service: _flutter.listViews({})
+[   +6 ms] Result: {type: FlutterViewList, views: [{type: FlutterView, id: _flutterView/0xea527890, isolate: {type: @Isolate, fixedId: true, id: isolates/593068628841227, name: main.dart$main-593068628841227, number: 593068628841227}}]}
+[   +1 ms] <- accept
+[        ] Connected to _flutterView/0xea527890.
+[   +3 ms] �  To hot reload changes while running, press "r". To hot restart (and rebuild state), press "R".
+[  +19 ms] An Observatory debugger and profiler on Android SDK built for x86 is available at: http://127.0.0.1:57939/CpXjyTrj4fs=/
+[   +1 ms] For a more detailed help message, press "h". To detach, press "d"; to quit, press "q".
+[+4850 ms] W/ActivityThread( 8147): handleWindowVisibility: no activity for token android.os.BinderProxy@391dab5
+[ +200 ms] D/EGL_emulation( 8147): eglMakeCurrent: 0xe6d7c4a0: ver 3 0 (tinfo 0xd32aefd0)
+[ +489 ms] D/EGL_emulation( 8147): eglMakeCurrent: 0xe6d7c4a0: ver 3 0 (tinfo 0xd32aefd0)
+[ +122 ms] W/BiChannelGoogleApi( 8147): [FirebaseAuth: ] getGoogleApiForMethod() returned Gms: com.google.firebase.auth.api.internal.zzak@1f49dd
+[ +719 ms] D/FirebaseAuth( 8147): Notifying id token listeners about user ( ueAquSTWLrViVSdbLtFxtyYZNO82 ).
+[  +13 ms] I/flutter ( 8147): signed in with google ueAquSTWLrViVSdbLtFxtyYZNO82
