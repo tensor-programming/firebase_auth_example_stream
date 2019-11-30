@@ -27,15 +27,17 @@ class MyHomePage extends StatelessWidget {
     return StreamBuilder<String>(
       stream: auth.onAuthStateChanged,
       builder: (context, AsyncSnapshot<String> snapshot) {
-        if (snapshot.connectionState == ConnectionState.active) {
-          final bool loggedIn = snapshot.hasData;
-          if (loggedIn == true) {
-            return HomePage();
-          } else {
-            return LoginPage();
-          }
-        }
-        return CircularProgressIndicator();
+        print(snapshot?.hasData);
+
+        // if (snapshot.connectionState == ConnectionState.active) {
+        //   final bool loggedIn = snapshot.hasData;
+        //   if (loggedIn == true) {
+        //     return HomePage();
+        //   } else {
+        return LoginPage();
+        //   }
+        // }
+        // return CircularProgressIndicator();
       },
     );
   }
@@ -207,9 +209,9 @@ class _LoginPageState extends State<LoginPage> {
           color: Colors.lightBlue,
           onPressed: () async {
             try {
-              final _auth = Provider.of(context).auth;
-              final id = await _auth.signInWithFacebook();
-              print('signed in with facebook $id');
+              // final _auth = Provider.of(context).auth;
+              // // final id = await _auth.signInWithFacebook();
+              // print('signed in with facebook $id');
             } catch (e) {
               print(e);
             }
