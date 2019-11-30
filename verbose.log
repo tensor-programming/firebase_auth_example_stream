@@ -693,3 +693,12 @@ QueueBufferDuration=447000,
 [ +122 ms] W/BiChannelGoogleApi( 8147): [FirebaseAuth: ] getGoogleApiForMethod() returned Gms: com.google.firebase.auth.api.internal.zzak@1f49dd
 [ +719 ms] D/FirebaseAuth( 8147): Notifying id token listeners about user ( ueAquSTWLrViVSdbLtFxtyYZNO82 ).
 [  +13 ms] I/flutter ( 8147): signed in with google ueAquSTWLrViVSdbLtFxtyYZNO82
+
+// Information from clicking the login button:
+[+4126 ms] W/ActivityThread( 8147): handleWindowVisibility: no activity for token android.os.BinderProxy@d7bc475
+[ +121 ms] D/EGL_emulation( 8147): eglMakeCurrent: 0xe6d7c4a0: ver 3 0 (tinfo 0xd32aefd0)
+[ +331 ms] D/EGL_emulation( 8147): eglMakeCurrent: 0xe6d7c4a0: ver 3 0 (tinfo 0xd32aefd0)
+[  +45 ms] W/BiChannelGoogleApi( 8147): [FirebaseAuth: ] getGoogleApiForMethod() returned Gms: com.google.firebase.auth.api.internal.zzak@1f49dd
+[ +390 ms] D/FirebaseAuth( 8147): Notifying id token listeners about user ( ueAquSTWLrViVSdbLtFxtyYZNO82 ).
+// print function call
+[   +5 ms] I/flutter ( 8147): signed in with google ueAquSTWLrViVSdbLtFxtyYZNO82
